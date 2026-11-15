@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JD FIN SERVICES - Your Financial Partner. Enquire about personal, home, business and other loan options.">
+  <meta name="theme-color" content="#101827">
+  <title>JD FIN SERVICES | Your Financial Partner</title>
+  <style>
+    :root{--navy:#101827;--navy2:#17243a;--red:#c92835;--gold:#e5b95c;--cream:#fffaf1;--muted:#b9c3d1}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f5f7fb;color:#172033}
+    a{color:inherit;text-decoration:none}.top{background:#0b1220;color:#dbe3ef;font-size:13px;padding:9px 5%;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{background:var(--navy);color:white;position:sticky;top:0;z-index:20;box-shadow:0 8px 28px #07101f35}
+    .nav{max-width:1160px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.7px}.mark{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#fff3cf,#d7a33d);color:#172033;font-weight:1000;border:3px solid #fff7e5;box-shadow:0 0 0 2px #d8aa4d}.brand small{display:block;font-size:10px;letter-spacing:2px;color:var(--gold);font-weight:700;margin-top:3px}
+    nav{display:flex;align-items:center;gap:24px;font-size:14px;color:#e6ebf2}nav a:hover{color:var(--gold)}.actions{display:flex;align-items:center;gap:10px}
+    button,.btn{border:0;cursor:pointer;border-radius:999px;padding:12px 19px;font-weight:800;font-size:13px;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+    .lang{background:#26364f;color:#fff;border:1px solid #40516c}.primary{background:linear-gradient(135deg,#e5b95c,#f5d98d);color:#172033;box-shadow:0 8px 20px #c9953038}.outline{border:1px solid #ffffff80;color:white;background:#ffffff0d}
+    .hero{background:radial-gradient(circle at 80% 20%,#34445f 0,transparent 34%),linear-gradient(125deg,#0b1220,#17263e 65%,#28364d);color:#fff;overflow:hidden;position:relative}
+    .hero:after{content:"";position:absolute;width:460px;height:460px;border:1px solid #e5b95c36;border-radius:50%;right:-130px;bottom:-260px;box-shadow:0 0 0 35px #e5b95c0c,0 0 0 75px #e5b95c08}
+    .hero-inner{max-width:1160px;margin:auto;padding:86px 22px 92px;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;position:relative;z-index:1}
+    .eyebrow{color:var(--gold);font-size:12px;font-weight:900;letter-spacing:3px;text-transform:uppercase}.hero h1{font-size:clamp(38px,6vw,66px);line-height:1.05;margin:18px 0 20px;letter-spacing:-2px}.hero h1 span{color:var(--gold)}.hero p{color:#c8d1df;line-height:1.8;max-width:600px;font-size:16px}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .trustline{display:flex;gap:20px;flex-wrap:wrap;margin-top:34px;color:#dce3ec;font-size:12px}.trustline span:before{content:"✓";color:var(--gold);font-weight:900;margin-right:7px}
+    .hero-card{background:linear-gradient(150deg,#ffffff18,#ffffff08);border:1px solid #ffffff2b;border-radius:25px;padding:28px;backdrop-filter:blur(8px);box-shadow:0 25px 70px #0004}.hero-card h3{margin:0 0 8px;font-size:23px}.hero-card p{font-size:13px;margin:0 0 20px}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mini{background:#0b1424a8;border:1px solid #ffffff19;border-radius:15px;padding:17px}.mini b{display:block;color:var(--gold);font-size:18px;margin-bottom:5px}.mini small{color:#d0d8e4}
+    section{padding:74px 22px}.wrap{max-width:1100px;margin:auto}.section-head{text-align:center;max-width:680px;margin:0 auto 38px}.section-head .eyebrow{color:var(--red)}.section-head h2{font-size:clamp(28px,4vw,40px);margin:12px 0;color:#142039}.section-head p{color:#68758a;line-height:1.7;margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:white;border:1px solid #e7ebf2;border-radius:19px;padding:25px;box-shadow:0 10px 30px #14203909;transition:.2s}.service:hover{transform:translateY(-4px);box-shadow:0 18px 36px #14203913}.service .ico{width:48px;height:48px;border-radius:14px;background:#fff0e9;color:var(--red);display:grid;place-items:center;font-size:23px}.service h3{margin:17px 0 8px;color:#17243a}.service p{margin:0;color:#69758a;line-height:1.65;font-size:14px}
+    .steps{background:#101827;color:white}.steps .section-head h2{color:white}.steps .section-head p{color:#bac5d4}.step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{border:1px solid #ffffff20;border-radius:18px;padding:24px;background:#ffffff08}.num{font-size:12px;color:var(--gold);font-weight:900;letter-spacing:2px}.step h3{margin:12px 0 8px}.step p{margin:0;color:#bac5d4;font-size:14px;line-height:1.65}
+    .enquiry{background:#fff}.formbox{max-width:760px;margin:auto;background:#f7f8fb;border:1px solid #e5eaf1;border-radius:24px;padding:28px;box-shadow:0 15px 40px #1420390b}.fields{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field label{display:block;font-size:12px;font-weight:800;color:#46536a;margin:0 0 7px}.field input,.field select,.field textarea{width:100%;border:1px solid #dce2eb;border-radius:11px;padding:13px 14px;background:white;font:inherit;color:#172033;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#c92835;box-shadow:0 0 0 3px #c9283514}.field.full{grid-column:1/-1}.field textarea{min-height:90px;resize:vertical}.form-note{font-size:12px;color:#69758a;line-height:1.6;margin:13px 0 18px}
+    footer{background:#0b1220;color:#c2ccda;padding:35px 22px}.foot{max-width:1100px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}.foot b{color:white}.foot small{color:#93a0b2}.mobile-apply{display:none}
+    @media(max-width:800px){nav{display:none}.hero-inner{grid-template-columns:1fr;padding-top:60px}.hero-card{max-width:560px}.services{grid-template-columns:1fr 1fr}.step-grid{grid-template-columns:1fr}.mobile-apply{display:flex;position:fixed;bottom:12px;left:12px;right:12px;z-index:30;box-shadow:0 8px 30px #0005}.mobile-apply .btn{width:100%}footer{padding-bottom:90px}}
+    @media(max-width:560px){.top{justify-content:center}.nav{padding:12px 16px}.hero-inner{padding:52px 18px 65px}.hero h1{letter-spacing:-1px}.services{grid-template-columns:1fr}section{padding:58px 18px}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.formbox{padding:19px}.hero-card{padding:20px}.mini-grid{gap:8px}}
+  </style>
+</head>
+<body>
+  <div class="top"><span id="topline">Your trusted financial partner</span><span>📞 <a href="tel:+919175546576">+91 91755 46576</a></span></div>
+  <header><div class="nav">
+    <a class="brand" href="#home"><span class="mark">JD</span><span>JD FIN SERVICES<small>YOUR FINANCIAL PARTNER</small></span></a>
+    <nav><a href="#home" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a><a href="#services" data-en="Services" data-mr="सेवा">Services</a><a href="#process" data-en="How it works" data-mr="प्रक्रिया">How it works</a><a href="#contact" data-en="Contact" data-mr="संपर्क">Contact</a></nav>
+    <div class="actions"><button class="lang" id="langBtn" type="button">मराठी</button><a class="btn primary" href="#contact" data-en="APPLY NOW" data-mr="आत्ताच अर्ज करा">APPLY NOW</a></div>
+  </div></header>
+  <main>
+    <section class="hero" id="home"><div class="hero-inner">
+      <div><div class="eyebrow" id="eyebrow">SMART FINANCIAL SUPPORT</div>
+        <h1 id="headline">Move forward with the <span>right financial</span> support.</h1>
+        <p id="intro">Explore loan options with guidance from JD FIN SERVICES. Share your enquiry and our team will connect with you to understand your requirements.</p>
+        <div class="hero-buttons"><a class="btn primary" href="#contact" id="heroApply">Apply for a Loan →</a><a class="btn outline" href="https://wa.me/919175546576" target="_blank" rel="noopener">WhatsApp Us</a></div>
+        <div class="trustline"><span id="trust1">Simple enquiry process</span><span id="trust2">Personal guidance</span><span id="trust3">Customer-first support</span></div>
+      </div>
+      <div class="hero-card"><h3 id="cardTitle">Let’s find a suitable option</h3><p id="cardText">Tell us what you are looking for. We’ll get in touch.</p>
+        <div class="mini-grid"><div class="mini"><b>01</b><small id="m1">Share your details</small></div><div class="mini"><b>02</b><small id="m2">Discuss your needs</small></div><div class="mini"><b>03</b><small id="m3">Explore options</small></div><div class="mini"><b>04</b><small id="m4">Get guided support</small></div></div>
+      </div>
+    </div></section>
+    <section id="services"><div class="wrap"><div class="section-head"><div class="eyebrow" id="serviceEyebrow">OUR SERVICES</div><h2 id="serviceTitle">Financial solutions for your next step</h2><p id="serviceIntro">Enquire about available loan products. Eligibility, approval, interest rates and terms depend on the lender’s assessment.</p></div>
+      <div class="services">
+        <article class="service"><div class="ico">⌂</div><h3 id="s1t">Home Loan</h3><p id="s1p">Enquire about financing options for purchasing or constructing a home.</p></article>
+        <article class="service"><div class="ico">↗</div><h3 id="s2t">Personal Loan</h3><p id="s2p">Explore personal finance options for planned or urgent expenses.</p></article>
+        <article class="service"><div class="ico">▣</div><h3 id="s3t">Business Loan</h3><p id="s3p">Ask about funding options to support your business requirements.</p></article>
+        <article class="service"><div class="ico">⌂</div><h3 id="s4t">Loan Against Property</h3><p id="s4p">Enquire about loan options against eligible property.</p></article>
+        <article class="service"><div class="ico">▤</div><h3 id="s5t">Vehicle Loan</h3><p id="s5p">Get information about financing options for eligible vehicles.</p></article>
+        <article class="service"><div class="ico">＋</div><h3 id="s6t">Other Loan Enquiry</h3><p id="s6p">Have a different requirement? Send us your enquiry.</p></article>
+      </div>
+    </div></section>
+    <section class="steps" id="process"><div class="wrap"><div class="section-head"><div class="eyebrow" id="processEyebrow">A SIMPLE PROCESS</div><h2 id="processTitle">How it works</h2><p id="processIntro">A clear first step to discuss your financial requirement.</p></div>
+      <div class="step-grid"><div class="step"><div class="num">STEP 01</div><h3 id="st1t">Send an enquiry</h3><p id="st1p">Fill in the enquiry form with basic contact and requirement details.</p></div><div class="step"><div class="num">STEP 02</div><h3 id="st2t">Connect with our team</h3><p id="st2p">We’ll contact you to understand your needs and explain the next steps.</p></div><div class="step"><div class="num">STEP 03</div><h3 id="st3t">Review available options</h3><p id="st3p">Any application, eligibility and approval are subject to the lender’s policies.</p></div></div>
+    </div></section>
+    <section class="enquiry" id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow" id="contactEyebrow">GET IN TOUCH</div><h2 id="contactTitle">Start your loan enquiry</h2><p id="contactIntro">Complete the form. It will open WhatsApp with your enquiry message ready to send.</p></div>
+      <form class="formbox" id="enquiryForm">
+        <div class="fields">
+          <div class="field"><label for="name" id="nameLabel">Full name *</label><input id="name" required placeholder="Enter your name"></div>
+          <div class="field"><label for="phone" id="phoneLabel">Mobile number *</label><input id="phone" required inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number"></div>
+          <div class="field"><label for="loan" id="loanLabel">Loan type *</label><select id="loan" required><option value="">Select loan type</option><option>Home Loan</option><option>Personal Loan</option><option>Business Loan</option><option>Loan Against Property</option><option>Vehicle Loan</option><option>Other</option></select></div>
+          <div class="field"><label for="amount" id="amountLabel">Required amount (optional)</label><input id="amount" placeholder="e.g. 500000"></div>
+          <div class="field full"><label for="message" id="messageLabel">Message (optional)</label><textarea id="message" placeholder="Briefly tell us about your requirement"></textarea></div>
+        </div>
+        <p class="form-note" id="formNote">Please do not share Aadhaar, PAN, bank details, passwords or document copies in this initial enquiry. Submitting an enquiry does not guarantee loan approval.</p>
+        <button class="btn primary" type="submit" id="submitBtn">Send Enquiry on WhatsApp →</button>
+      </form>
+    </div></section>
+  </main>
+  <footer><div class="foot"><div><b>JD FIN SERVICES</b><br><small id="footTag">YOUR FINANCIAL PARTNER</small></div><div>📞 <a href="tel:+919175546576">+91 91755 46576</a> &nbsp;·&nbsp; <a href="https://wa.me/919175546576" target="_blank" rel="noopener">WhatsApp</a></div><small>© <span id="year"></span> JD FIN SERVICES. All rights reserved.</small></div></footer>
+  <div class="mobile-apply"><a class="btn primary" href="#contact" id="mobileApply">APPLY NOW</a></div>
+  <script>
+    const copy = {
+      en:{
+        topline:"Your trusted financial partner",eyebrow:"SMART FINANCIAL SUPPORT",headline:'Move forward with the <span>right financial</span> support.',intro:"Explore loan options with guidance from JD FIN SERVICES. Share your enquiry and our team will connect with you to understand your requirements.",heroApply:"Apply for a Loan →",trust1:"Simple enquiry process",trust2:"Personal guidance",trust3:"Customer-first support",cardTitle:"Let’s find a suitable option",cardText:"Tell us what you are looking for. We’ll get in touch.",m1:"Share your details",m2:"Discuss your needs",m3:"Explore options",m4:"Get guided support",serviceEyebrow:"OUR SERVICES",serviceTitle:"Financial solutions for your next step",serviceIntro:"Enquire about available loan products. Eligibility, approval, interest rates and terms depend on the lender’s assessment.",s1t:"Home Loan",s1p:"Enquire about financing options for purchasing or constructing a home.",s2t:"Personal Loan",s2p:"Explore personal finance options for planned or urgent expenses.",s3t:"Business Loan",s3p:"Ask about funding options to support your business requirements.",s4t:"Loan Against Property",s4p:"Enquire about loan options against eligible property.",s5t:"Vehicle Loan",s5p:"Get information about financing options for eligible vehicles.",s6t:"Other Loan Enquiry",s6p:"Have a different requirement? Send us your enquiry.",processEyebrow:"A SIMPLE PROCESS",processTitle:"How it works",processIntro:"A clear first step to discuss your financial requirement.",st1t:"Send an enquiry",st1p:"Fill in the enquiry form with basic contact and requirement details.",st2t:"Connect with our team",st2p:"We’ll contact you to understand your needs and explain the next steps.",st3t:"Review available options",st3p:"Any application, eligibility and approval are subject to the lender’s policies.",contactEyebrow:"GET IN TOUCH",contactTitle:"Start your loan enquiry",contactIntro:"Complete the form. It will open WhatsApp with your enquiry message ready to send.",nameLabel:"Full name *",phoneLabel:"Mobile number *",loanLabel:"Loan type *",amountLabel:"Required amount (optional)",messageLabel:"Message (optional)",formNote:"Please do not share Aadhaar, PAN, bank details, passwords or document copies in this initial enquiry. Submitting an enquiry does not guarantee loan approval.",submitBtn:"Send Enquiry on WhatsApp →",mobileApply:"APPLY NOW",footTag:"YOUR FINANCIAL PARTNER",namePh:"Enter your name",phonePh:"10-digit mobile number",loanPh:"Select loan type",amountPh:"e.g. 500000",messagePh:"Briefly tell us about your requirement",language:"मराठी"},
+      mr:{
+        topline:"तुमचा विश्वासू आर्थिक भागीदार",eyebrow:"स्मार्ट आर्थिक मार्गदर्शन",headline:'योग्य आर्थिक <span>साथीने</span> पुढे चला.',intro:"JD FIN SERVICES च्या मार्गदर्शनासह उपलब्ध कर्ज पर्यायांबद्दल चौकशी करा. तुमची माहिती पाठवा, आमची टीम तुमच्याशी संपर्क साधेल.",heroApply:"कर्जासाठी चौकशी करा →",trust1:"सोपी चौकशी प्रक्रिया",trust2:"वैयक्तिक मार्गदर्शन",trust3:"ग्राहकांना प्राधान्य",cardTitle:"योग्य पर्याय शोधूया",cardText:"तुमची गरज सांगा. आम्ही तुमच्याशी संपर्क साधू.",m1:"तुमची माहिती द्या",m2:"गरज समजून घेऊ",m3:"पर्याय पाहू",m4:"योग्य मार्गदर्शन",serviceEyebrow:"आमच्या सेवा",serviceTitle:"तुमच्या पुढील टप्प्यासाठी आर्थिक पर्याय",serviceIntro:"उपलब्ध कर्ज योजनांबद्दल चौकशी करा. पात्रता, मंजुरी, व्याजदर आणि अटी कर्जदात्याच्या तपासणीवर अवलंबून असतात.",s1t:"होम लोन",s1p:"घर खरेदी किंवा बांधकामासाठी उपलब्ध कर्ज पर्यायांची चौकशी करा.",s2t:"पर्सनल लोन",s2p:"वैयक्तिक गरजांसाठी उपलब्ध कर्ज पर्याय जाणून घ्या.",s3t:"बिझनेस लोन",s3p:"व्यवसायाच्या गरजांसाठी निधीच्या पर्यायांची चौकशी करा.",s4t:"प्रॉपर्टीवर कर्ज",s4p:"पात्र मालमत्तेवर मिळू शकणाऱ्या कर्ज पर्यायांची माहिती घ्या.",s5t:"वाहन कर्ज",s5p:"पात्र वाहनांसाठी उपलब्ध वित्तपुरवठ्याची माहिती घ्या.",s6t:"इतर कर्ज चौकशी",s6p:"वेगळी गरज असल्यास आम्हाला चौकशी पाठवा.",processEyebrow:"सोपी प्रक्रिया",processTitle:"प्रक्रिया कशी आहे?",processIntro:"तुमची आर्थिक गरज मांडण्यासाठी एक सोपी सुरुवात.",st1t:"चौकशी पाठवा",st1p:"संपर्क आणि गरजेची प्राथमिक माहिती फॉर्ममध्ये भरा.",st2t:"आमच्याशी संपर्क",st2p:"तुमची गरज समजून घेण्यासाठी आमची टीम संपर्क करेल.",st3t:"उपलब्ध पर्याय समजून घ्या",st3p:"अर्ज, पात्रता आणि मंजुरी कर्जदात्याच्या नियमांनुसार असते.",contactEyebrow:"संपर्क साधा",contactTitle:"कर्ज चौकशी सुरू करा",contactIntro:"फॉर्म भरा. तुमचा संदेश तयार असलेले WhatsApp उघडेल.",nameLabel:"पूर्ण नाव *",phoneLabel:"मोबाईल नंबर *",loanLabel:"कर्जाचा प्रकार *",amountLabel:"आवश्यक रक्कम (ऐच्छिक)",messageLabel:"संदेश (ऐच्छिक)",formNote:"पहिल्या चौकशीमध्ये आधार, पॅन, बँक तपशील, पासवर्ड किंवा कागदपत्रांच्या प्रती पाठवू नका. चौकशी पाठवल्याने कर्ज मंजूर होईल याची हमी मिळत नाही.",submitBtn:"WhatsApp वर चौकशी पाठवा →",mobileApply:"आत्ताच अर्ज करा",footTag:"तुमचा आर्थिक भागीदार",namePh:"तुमचे नाव लिहा",phonePh:"१० अंकी मोबाईल नंबर",loanPh:"कर्जाचा प्रकार निवडा",amountPh:"उदा. 500000",messagePh:"तुमची गरज थोडक्यात सांगा",language:"English"}
+    };
+    let current="en";
+    function setLanguage(lang){
+      current=lang;const d=copy[lang];document.documentElement.lang=lang;
+      Object.keys(d).forEach(id=>{const el=document.getElementById(id);if(el){if(id==="headline")el.innerHTML=d[id];else el.textContent=d[id];}});
+      document.querySelectorAll("[data-en]").forEach(el=>el.textContent=el.dataset[lang]);
+      document.getElementById("langBtn").textContent=d.language;
+      document.getElementById("name").placeholder=d.namePh;document.getElementById("phone").placeholder=d.phonePh;document.getElementById("amount").placeholder=d.amountPh;document.getElementById("message").placeholder=d.messagePh;
+      const select=document.getElementById("loan");select.options[0].text=d.loanPh;
+      if(lang==="mr"){["Home Loan","Personal Loan","Business Loan","Loan Against Property","Vehicle Loan","Other"].forEach((v,i)=>select.options[i+1].text=["होम लोन","पर्सनल लोन","बिझनेस लोन","प्रॉपर्टीवर कर्ज","वाहन कर्ज","इतर"][i]);}
+      else ["Home Loan","Personal Loan","Business Loan","Loan Against Property","Vehicle Loan","Other"].forEach((v,i)=>select.options[i+1].text=v);
+    }
+    document.getElementById("langBtn").addEventListener("click",()=>setLanguage(current==="en"?"mr":"en"));
+    document.getElementById("enquiryForm").addEventListener("submit",e=>{
+      e.preventDefault();
+      const name=document.getElementById("name").value.trim(),phone=document.getElementById("phone").value.trim(),loan=document.getElementById("loan").value,amount=document.getElementById("amount").value.trim(),message=document.getElementById("message").value.trim();
+      const body=`JD FIN SERVICES - Loan Enquiry\nName: ${name}\nMobile: ${phone}\nLoan type: ${loan}\nRequired amount: ${amount||"Not specified"}\nMessage: ${message||"None"}\nLanguage: ${current==="mr"?"Marathi":"English"}`;
+      window.open("https://wa.me/919175546576?text="+encodeURIComponent(body),"_blank","noopener");
+    });
+    document.getElementById("year").textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
